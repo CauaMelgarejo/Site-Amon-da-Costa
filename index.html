@@ -94,10 +94,60 @@
                 </div>
             </div>
         </section>
+        <section class="grid-container">
+            <div class="cardModal" onclick="openModal('Título 1', 'Texto completo do projeto 1.', 'img/palestra_escola.jpeg')">
+                <img src="img/palestra_escola.jpeg" alt="Imagem projeto 1">
+                <div>
+                    <strong>Título 1</strong>
+                    <p>Resumo do projeto 1...</p>
+                </div>
+            </div>
+            <div class="cardModal" onclick="openModal('Título 2', 'Texto completo do projeto 2.', 'img2.jpg')">
+                <img src="img2.jpg" alt="Imagem projeto 2">
+                <div>
+                    <strong>Título 2</strong>
+                    <p>Resumo do projeto 2...</p>
+                </div>
+            </div>
+            <!-- Adicione mais ds aqui -->
+            <div class="cardModal" onclick="openModal('Título 3', 'Texto completo do projeto 3.', 'img2.jpg')">
+                <img src="img3.jpg" alt="Imagem projeto 3">
+                <div>
+                    <strong>Título 3</strong>
+                    <p>Resumo do projeto 3...</p>
+                </div>
+            </div>
+            <div class="cardModal" onclick="openModal('Título 4', 'Texto completo do projeto 4.', 'img4.jpg')">
+                <img src="img3.jpg" alt="Imagem projeto 3">
+                <div>
+                    <strong>Título 4</strong>
+                    <p>Resumo do projeto 4...</p>
+                </div>
+            </div>
+            <div class="cardModal" onclick="openModal('Título 3', 'Texto completo do projeto 3.', 'img2.jpg')">
+                <img src="img3.jpg" alt="Imagem projeto 3">
+                <div>
+                    <strong>Título 3</strong>
+                    <p>Resumo do projeto 3...</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="backdrop" id="backdrop">
+            <div class="modal">
+                <button class="close-btn" onclick="closeModal()">&times;</button>
+                <img id="modal-img" src="" alt="Imagem">
+                <div>
+                    <h2 id="modal-title">Título</h2>
+                    <p id="modal-text">Texto</p>
+                </div>
+            </div>
+        </div>
+
     </main>
     <footer>
-
     </footer>
 </body>
+<script src="./js/js.js"></script>
 
 </html>
