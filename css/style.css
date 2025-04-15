@@ -1,132 +1,181 @@
-*{
-    margin: 0;
-    top: 0;
-}
-.container{
-    position: relative;
-    width: 1100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 30px;
-}
-.container .card{
-    position: relative;
-    max-width: 300px;
-    height: 215px;
-    background-color: #0D715B;
-    margin: 30px 10px;
-    padding: 20px 15px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 5px 202px rgba(0,0,0,0,5);
-    transition: 0.3s ease-in-out;
-}
-.container .card:hover{
-    height: 420px;
-}
-.container .card .imgBx{
-    position: relative;
-    width: 260px;
-    height: 260px;
-    top: -60px;
-    left: 20px;
-    z-index: 1;
-    box-shadow: 0 5px 202px rgba(0,0,0,0,5);
+* {
+  margin: 0;
+  top: 0;
 }
 
-.container .card .imgBx img{
-    max-width: 100%;
-    border-radius: 4px;
+.container {
+  position: relative;
+  width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
 }
-.container .card .content{
-    position: relative;
-    margin-top: -140px;
-    padding: 10px 15px;
-    text-align: center;
-    color: #111;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.3s ease-in-out;
+
+.container .card {
+  position: relative;
+  max-width: 300px;
+  height: 215px;
+  background-color: #0D715B;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 202px rgba(0, 0, 0, 0, 5);
+  transition: 0.3s ease-in-out;
 }
-.container .card:hover .content{
-    visibility: visible;
-    opacity: 1;
-    margin-top: -40px;
-    transition-delay: 0.3s;
+
+.container .card:hover {
+  height: 420px;
 }
+
+.container .card .imgBx {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  top: -60px;
+  left: 20px;
+  z-index: 1;
+  box-shadow: 0 5px 202px rgba(0, 0, 0, 0, 5);
+}
+
+.container .card .imgBx img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.container .card .content {
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.container .card:hover .content {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
+}
+
 /* Modal */
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 40px;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(671px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
 
-  .cardModal {
-    background: #087265;
-    color: white;
-    border-radius: 10px;
-    padding: 20px;
-    display: flex;
-    gap: 10px;
-    cursor: pointer;
-    align-items: center;
-  }
+.cardModal {
+  background: #087265;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+  align-items: center;
+  height: 258px;
+  /* ou o que ficar bom visualmente */
+  font-size: 1.1rem;
+  /* aumenta o texto */
+}
 
-  .cardModal img {
-    width: 80px;
-    height: 80px;
-    background: white;
-    border-radius: 8px;
-    object-fit: cover;
-  }
+.cardModal img {
+  width: 255px;
+  height: 194px;
+  background: white;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
 
-  .backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0,0,0,0.5);
-    backdrop-filter: blur(5px);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 99;
-  }
+.card-subtitle {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-bottom: 5px;
+}
 
-  .modal {
-    background: #087265;
-    color: white;
-    padding: 30px;
-    border-radius: 12px;
-    max-width: 700px;
-    width: 90%;
-    display: flex;
-    gap: 20px;
-    position: relative;
-  }
+.card-title {
+  margin: 0;
+  font-size: 1.2rem;
+}
 
-  .modal img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 10px;
-  }
+.card-text {
+  font-size: 0.95rem;
+  margin: 0.5rem 0;
+}
 
-  .modal h2 {
-    margin: 0;
-  }
+.card-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  opacity: 0.8;
+  margin-top: auto;
+}
 
-  .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    background: none;
-    border: none;
-    font-size: 24px;
-    color: white;
-    cursor: pointer;
-  }
+.avatar {
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/amon.jpeg);
+  border-radius: 50%;
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+}
+
+.modal {
+  background: #087265;
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 700px;
+  width: 90%;
+  display: flex;
+  gap: 20px;
+  position: relative;
+}
+
+.modal img {
+  width: 255px;
+  height: 194px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.modal h2 {
+  margin: 0;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}

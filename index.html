@@ -94,60 +94,124 @@
                 </div>
             </div>
         </section>
-        <section class="grid-container">
-            <div class="cardModal" onclick="openModal('Título 1', 'Texto completo do projeto 1.', 'img/palestra_escola.jpeg')">
-                <img src="img/palestra_escola.jpeg" alt="Imagem projeto 1">
-                <div>
-                    <strong>Título 1</strong>
-                    <p>Resumo do projeto 1...</p>
+        <section id="projetos">
+            <h2>Projetos e palestras</h2>
+            <div class="grid-container">
+                <div class="cardModal"
+                    onclick="openModal('Título 1', 'Texto completo do projeto 1.', 'img/palestra_escola.jpeg', 'Subtítulo 1')">
+                    <img src="img/palestra_escola.jpeg" alt="Imagem projeto 1">
+                    <div class="card-content">
+                        <span class="card-subtitle">Subtítulo 1</span>
+                        <h3 class="card-title">Título 1</h3>
+                        <hr class="divider">
+                        <p class="card-text">Texto resumido...</p>
+                        <div class="card-footer">
+                            <small>Publicado por:</small>
+                            <div class="avatar"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardModal"
+                    onclick="openModal('Título 2', 'Texto completo do projeto 2.', 'img2.jpg', 'Subtítulo 1')">
+                    <img src="img2.jpg" alt="Imagem projeto 2">
+                    <div class="card-content">
+                        <span class="card-subtitle">Subtítulo 1</span>
+                        <h3 class="card-title">Título 1</h3>
+                        <hr class="divider">
+                        <p class="card-text">Texto resumido...</p>
+                        <div class="card-footer">
+                            <small>Publicado por:</small>
+                            <div class="avatar"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Adicione mais ds aqui -->
+                <div class="cardModal"
+                    onclick="openModal('Título 3', 'Texto completo do projeto 3.', 'img2.jpg', 'Subtítulo 1')">
+                    <img src="img3.jpg" alt="Imagem projeto 3">
+                    <div class="card-content">
+                        <span class="card-subtitle">Subtítulo 1</span>
+                        <h3 class="card-title">Título 1</h3>
+                        <hr class="divider">
+                        <p class="card-text">Texto resumido...</p>
+                        <div class="card-footer">
+                            <small>Publicado por:</small>
+                            <div class="avatar"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardModal"
+                    onclick="openModal('Título 4', 'Texto completo do projeto 4.', 'img4.jpg', 'Subtítulo 1')">
+                    <img src="img3.jpg" alt="Imagem projeto 3">
+                    <div class="card-content">
+                        <span class="card-subtitle">Subtítulo 1</span>
+                        <h3 class="card-title">Título 1</h3>
+                        <hr class="divider">
+                        <p class="card-text">Texto resumido...</p>
+                        <div class="card-footer">
+                            <small>Publicado por:</small>
+                            <div class="avatar"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardModal"
+                    onclick="openModal('Título 3', 'Texto completo do projeto 3.', 'img2.jpg', 'Subtítulo 1')">
+                    <img src="img3.jpg" alt="Imagem projeto 3">
+                    <div class="card-content">
+                        <span class="card-subtitle">Subtítulo 1</span>
+                        <h3 class="card-title">Título 1</h3>
+                        <hr class="divider">
+                        <p class="card-text">Texto resumido...</p>
+                        <div class="card-footer">
+                            <small>Publicado por:</small>
+                            <div class="avatar"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardModal"
+                    onclick="openModal('Título 3', 'Texto completo do projeto 3.', 'img2.jpg', 'Subtítulo 1')">
+                    <img src="img3.jpg" alt="Imagem projeto 3">
+                    <div class="card-content">
+                        <span class="card-subtitle">Subtítulo 1</span>
+                        <h3 class="card-title">Título 1</h3>
+                        <hr class="divider">
+                        <p class="card-text">Texto resumido...</p>
+                        <div class="card-footer">
+                            <small>Publicado por:</small>
+                            <div class="avatar"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="cardModal" onclick="openModal('Título 2', 'Texto completo do projeto 2.', 'img2.jpg')">
-                <img src="img2.jpg" alt="Imagem projeto 2">
-                <div>
-                    <strong>Título 2</strong>
-                    <p>Resumo do projeto 2...</p>
-                </div>
-            </div>
-            <!-- Adicione mais ds aqui -->
-            <div class="cardModal" onclick="openModal('Título 3', 'Texto completo do projeto 3.', 'img2.jpg')">
-                <img src="img3.jpg" alt="Imagem projeto 3">
-                <div>
-                    <strong>Título 3</strong>
-                    <p>Resumo do projeto 3...</p>
-                </div>
-            </div>
-            <div class="cardModal" onclick="openModal('Título 4', 'Texto completo do projeto 4.', 'img4.jpg')">
-                <img src="img3.jpg" alt="Imagem projeto 3">
-                <div>
-                    <strong>Título 4</strong>
-                    <p>Resumo do projeto 4...</p>
-                </div>
-            </div>
-            <div class="cardModal" onclick="openModal('Título 3', 'Texto completo do projeto 3.', 'img2.jpg')">
-                <img src="img3.jpg" alt="Imagem projeto 3">
-                <div>
-                    <strong>Título 3</strong>
-                    <p>Resumo do projeto 3...</p>
+
+            <div class="backdrop" id="backdrop">
+                <div class="modal">
+                    <button class="close-btn" onclick="closeModal()">&times;</button>
+                    <img id="modal-img" src="" alt="Imagem">
+                    <div>
+                        <h2 id="modal-title">Título</h2>
+                        <h4 id="modal-subtitle">Subtitulo</h4>
+                        <p id="modal-text">Texto</p>
+                    </div>
                 </div>
             </div>
         </section>
-
-        <div class="backdrop" id="backdrop">
-            <div class="modal">
-                <button class="close-btn" onclick="closeModal()">&times;</button>
-                <img id="modal-img" src="" alt="Imagem">
-                <div>
-                    <h2 id="modal-title">Título</h2>
-                    <p id="modal-text">Texto</p>
-                </div>
-            </div>
-        </div>
-
+        <section id="area-video">
+            <h1>Ultimos vídeos</h1>
+            <a href="#" class="btn-veja">Veja mais</a>
+            <iframe width="530" height="943" src="https://www.youtube.com/embed/DP_kS7p5u90"
+                title="Ep 120 Histórias do Sor Amon - O começo do RS foi em Viamão" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="530" height="943" src="https://www.youtube.com/embed/zwTJLbedsGQ"
+                title="Histórias do Sor Amon - Lendas de Gravataí" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
     </main>
     <footer>
     </footer>
 </body>
-<script src="./js/js.js"></script>
+<script src="./js/modal.js"></script>
 
 </html>
