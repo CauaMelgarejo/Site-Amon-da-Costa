@@ -5,7 +5,7 @@ function abrirModal(videoURL){
     iframe.src = videoURL;
     modalVideo.style.display = 'flex';
 }
-function closeModal(){
+function fecharModal(){
     const modalVideo = document.getElementById('video-modal');
     const iframe = document.getElementById('video-frame');
 
