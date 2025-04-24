@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsivo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -18,10 +19,10 @@
         <nav class="menu">
             <ul>
                 <li>
-                    <a href="">Ínicio</a>
+                    <a href="#inicio">Ínicio</a>
                 </li>
                 <li>
-                    <a href="">Biografia</a>
+                    <a href="#carrosel-historia">Biografia</a>
                 </li>
                 <li>
                     <a href="">Projetos</a>
@@ -61,7 +62,7 @@
         <section id="carrosel-historia">
             <h1>Quem é o Amon?</h1>
             <div class="container">
-                <div class="card">
+                <div class="card" tabindex="0">
                     <div class="imgBx">
                         <img src="./img/foto1.jpg" alt="">
                     </div>
@@ -104,12 +105,12 @@
                         quas eligendi veritatis quibusdam deserunt earum.</p>
                 </div>
                 <div class="obj">
-                    <img src="" alt="">
+                    <img src="./img/Goal.png" alt="">
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus beatae iste excepturi
                         quas eligendi veritatis quibusdam deserunt earum.</p>
                 </div>
                 <div class="obj">
-                    <img src="" alt="">
+                    <img src="./img/Edit.png" alt="">
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus beatae iste excepturi
                         quas eligendi veritatis quibusdam deserunt earum.</p>
                 </div>
@@ -260,57 +261,50 @@
             </div>
         </section>
         <section id="forms">
-            <h1>Vamos entrar em contato conosco</h1>
-            <div class="contato">
-                <div class="email">
-                    <img src="#" alt="logo email">
-                    <h4>lorem@gmail.com</h4>
+            <div class="form-container">
+              <!-- Lado esquerdo: Informações de contato -->
+              <div class="contato-info">
+                <h2>Vamos entrar em contato conosco</h2>
+                <div class="info-item">
+                  <img src="img/email-icon.png" alt="Email">
+                  <span>Lorem@gmail.com</span>
                 </div>
-                <div class="numero">
-                    <img src="" alt="Telefone">
-                    <h4>(51)0000-0000</h4>
+                <div class="info-item">
+                  <img src="img/phone-icon.png" alt="Telefone">
+                  <span>+555100000000</span>
                 </div>
-                <div class="loc">
-                    <img src="" alt="Icone localização">
-                    <h4>Localização</h4>
+                <div class="info-item">
+                  <img src="img/location-icon.png" alt="Localização">
+                  <span>Localização</span>
                 </div>
-            </div>
-            <div class="sociais">
-                <h2>Conecte conosco</h2>
+          
+                <h3>Conecte conosco</h3>
                 <div class="redes-sociais">
-                    <a href="" class="redes">
-                        <img src="" alt="">
-                    </a>
-                    <a href="" class="redes">
-                        <img src="" alt="">
-                    </a>
-                    <a href="" class="redes">
-                        <img src="" alt="">
-                    </a>
-                    <a href="" class="redes">
-                        <img src="" alt="">
-                    </a>
-                    <a href="" class="redes">
-                        <img src="" alt="">
-                    </a>
+                  <a href="#"><img src="img/facebook.png" alt=""></a>
+                  <a href="#"><img src="img/instagram.png" alt=""></a>
+                  <a href="#"><img src="img/youtube.png" alt=""></a>
+                  <a href="#"><img src="img/x.png" alt=""></a>
+                  <a href="#"><img src="img/tiktok.png" alt=""></a>
                 </div>
-            </div>
-            <div class="formulario">
-                <form id="forms">
-                    <label>Nome:</label>
-                    <input type="text" required id="name">
-
-                    <label>E-mail:</label>
-                    <input type="email" required id="email">
-
-                    <label>Número:</label>
-                    <input type="tel" id="telNo" size="20" minlength="9" maxlength="14">
-                    <label>Mensagem:</label>
-                    <input type="text" required id="msg">
-                    <button id="enviar">Enviar</button>
+              </div>
+          
+              <!-- Lado direito: Formulário -->
+              <div class="formulario">
+                <h2>Entre em contato</h2>
+                <form>
+                  <label>Nome:</label>
+                  <input type="text" required>
+                  <label>E-mail:</label>
+                  <input type="email" required>
+                  <label>Telefone:</label>
+                  <input type="tel">
+                  <label>Mensagem:</label>
+                  <textarea rows="4" required></textarea>
+                  <button type="submit">Enviar</button>
                 </form>
+              </div>
             </div>
-        </section>
+          </section>
     </main>
     <footer>
     </footer>

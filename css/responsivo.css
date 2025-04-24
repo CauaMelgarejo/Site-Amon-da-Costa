@@ -1,0 +1,175 @@
+@media (max-width: 768px) {
+    .menu ul {
+      font-size: 20px;
+      gap: 0.3rem;
+    }
+  
+    .btn-header {
+      position: static;
+      margin: 20px auto;
+      display: block;
+      text-align: center;
+    }
+  
+    #inicio {
+      flex-direction: column;
+      text-align: center;
+      height: auto;
+    }
+  
+    .container-text {
+      font-size: 18px;
+      padding: 20px;
+    }
+  
+    .container-text h1 {
+      font-size: 28px;
+    }
+  
+    .container-foto {
+      margin-top: 0;
+      justify-content: center;
+    }
+  }
+  @media (max-width: 768px) {
+    .container {
+      width: 100%;
+      padding: 5px;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .container .card:hover {
+      height: auto;
+    }
+  
+    .container-obj {
+      flex-direction: column;
+      padding: 20px;
+      gap: 20px;
+    }
+  
+    .container-obj .obj {
+      width: 100%;
+      height: auto;
+      padding: 20px;
+    }
+  
+    #carrosel-historia {
+      height: auto;
+    }
+  }
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+      padding: 20px;
+    }
+  
+    .cardModal {
+      flex-direction: column;
+      height: auto;
+      align-items: flex-start;
+    }
+  
+    .cardModal img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .modal {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .modal img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .card-content {
+      gap: 10px;
+    }
+  
+    .card-footer {
+      justify-content: flex-start;
+    }
+  }
+  @media (max-width: 768px) {
+    @media (max-width: 768px) {
+      #area-video,
+      #projetos {
+        min-height: 100vh;
+        height: auto;
+      }
+    }
+  
+    #area-video h1 {
+      font-size: 28px;
+      margin-top: 10px;
+    }
+  
+    .container-videos {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+  
+    .img-video {
+      width: 100%;
+      max-width: 90vw;
+      height: auto;
+    }
+  
+    .assistir-btn {
+      padding: 10px 16px;
+      font-size: 1rem;
+    }
+  }
+  @media (max-width: 768px) {
+    #forms {
+      height: auto;
+      flex-direction: column;
+      padding: 0;
+    }
+  
+    .form-container {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .contato-info,
+    .formulario {
+      width: 100%;
+      padding: 0; /* remove o espaço interno */
+    }
+  
+    .formulario {
+      padding: 2rem 0; /* só espaço em cima/baixo */
+    }
+  
+    .contato-info h2, .contato-info h3,
+    .formulario h2 {
+      font-size: 24px;
+      padding: 1rem;
+    }
+  
+    .formulario form {
+      padding: 0 1rem;
+    }
+  
+    .formulario button {
+      width: 100%;
+    }
+  
+    .redes-sociais {
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      padding-bottom: 1rem;
+    }
+  
+    .redes-sociais img {
+      width: 26px;
+      height: 26px;
+    }
+  }
