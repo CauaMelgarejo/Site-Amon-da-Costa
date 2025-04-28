@@ -120,7 +120,7 @@ body {
   transition: 0.3s ease-in-out;
 }
 
-.container .card:hover .card:focus-within{
+.container .card:hover {
   height: 420px;
 }
 
