@@ -79,12 +79,12 @@
   
     .modal {
       flex-direction: column;
-      padding: 20px;
+      padding: 10px;
     }
   
     .modal img {
-      width: 100%;
-      height: auto;
+      max-height: 200px;
+      object-fit: cover;
     }
   
     .card-content {

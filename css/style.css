@@ -11,6 +11,9 @@ body {
   font-family: 'Playfair', Arial, Helvetica, sans-serif;
   
 }
+.body-no-scroll {
+  overflow: hidden;
+}
 
 /* Seção 1 */
 .menu ul {
@@ -257,6 +260,7 @@ body {
 }
 
 .backdrop {
+  overflow: auto;
   position: fixed;
   top: 0;
   left: 0;
@@ -280,6 +284,8 @@ body {
   display: flex;
   gap: 20px;
   position: relative;
+  overflow-y: auto;
+  max-height: 90vh;
 }
 
 .modal img {
@@ -302,6 +308,7 @@ body {
   font-size: 24px;
   color: white;
   cursor: pointer;
+  z-index: 2;
 }
 
 /* Videos */
