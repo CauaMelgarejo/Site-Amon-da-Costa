@@ -250,9 +250,9 @@ body {
 }
 
 .avatar {
-  width: 20px;
-  height: 20px;
-  background-image: url(../img/amon.jpeg);
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/icon.png);
   border-radius: 50%;
 }
 
@@ -313,6 +313,18 @@ body {
   font-size: 32px;
   margin-top: 15px;
 }
+.btn-veja{
+  display: block; /* ou inline-block */
+  margin-left: 90%;
+  background-color: #c79c11;
+  color: white;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 13px;
+  text-decoration: none;
+  width: fit-content;
+
+}
 
 .container-videos {
   display: flex;
@@ -340,7 +352,7 @@ body {
   display: inline-block;
   margin-top: 0 auto;
   background-color: #c79c11;
-  color: black;
+  color: white;
   font-weight: bold;
   padding: 8px 12px;
   border-radius: 6px;
@@ -383,20 +395,24 @@ body {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 14px;
+  font-size: 25px;
   margin-bottom: 1rem;
 }
 
 .redes-sociais {
   display: flex;
   gap: 1rem;
+  justify-content: center;
 }
 
 .redes-sociais img {
-  width: 30px;
-  height: 30px;
+  width: 90px;
+  height: 90px;
 }
-
+.redes-sociais img:hover
+{
+  transform: scale(1.05);
+}
 .formulario {
   flex: 1;
   background-color: #087265;
