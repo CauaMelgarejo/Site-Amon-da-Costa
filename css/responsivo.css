@@ -181,3 +181,123 @@
       height: 60px;
     }
   }
+  @media (max-width: 1366px) {
+  #inicio {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .container-text {
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .container-foto {
+    margin-top: 0;
+    max-width: 100%;
+  }
+
+  .container {
+    width: 100%;
+    padding: 50px 20px;
+  }
+
+  .container .card {
+    margin: 20px auto;
+  }
+
+  .container-obj {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .cardModal {
+    flex-direction: column;
+    height: auto;
+    align-items: flex-start;
+  }
+
+  .cardModal img {
+    width: 100%;
+    height: auto;
+  }
+
+  .modal {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .modal img {
+    width: 100%;
+    height: auto;
+  }
+
+  .btn-veja {
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+  }
+
+  .form-container {
+    flex-direction: column;
+  }
+
+  .contato-info,
+  .formulario {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .redes-sociais img {
+    width: 50px;
+    height: 50px;
+  }
+
+  #area-video {
+    height: auto;
+    padding-bottom: 3rem;
+  }
+
+  #carrosel-historia {
+    height: auto;
+    padding-bottom: 3rem;
+  }
+
+  #projetos {
+    height: auto;
+    padding-bottom: 3rem;
+  }
+
+  #forms {
+    height: auto;
+    padding-bottom: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  #area-video {
+    min-height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .img-video {
+    width: 100%;
+    height: auto;
+  }
+
+  .video-card h3 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .container-videos {
+    flex-direction: column;
+    align-items: center;
+  }
+}

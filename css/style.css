@@ -313,7 +313,9 @@ body {
 
 /* Videos */
 #area-video {
-  height: 100vh;
+  min-height: 100vh;
+  padding-bottom: 3rem; /* espaço para evitar corte nos vídeos */
+  box-sizing: border-box;
 }
 #area-video h1{
   text-align: center;
