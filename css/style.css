@@ -4,6 +4,7 @@
 }
 html{
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -53,12 +54,12 @@ body {
 }
 
 #inicio {
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
+  min-height: 100vh;
+   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 40px;
   padding: 20px;
 }
 
@@ -75,14 +76,7 @@ body {
 }
 
 .container-foto {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 598px;
-  height: auto;
-  flex: 1;
-  margin-top: 20px;
+ max-width: 400px;
 }
 
 .foto-inicial {
@@ -94,20 +88,21 @@ body {
 }
 /* Seção 2 */
 #carrosel-historia{
-  height: 100vh;
+  min-height: 100vh;
 }
 #carrosel-historia h1{
   text-align: center;
   font-size: 36px;
 }
 .container {
-  position: relative;
-  width: 1355px;
+  max-width: 1355px;
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 100px;
+  padding: 100px 20px;
 }
 
 .container .card {
